@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MVVM_Implementacion_HACB_V2.Vista;
+using MVVM_Implementacion_HACB_V2.VistaModelo;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +12,7 @@ namespace MVVM_Implementacion_HACB_V2
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Page1();
         }
 
         protected override void OnStart()
