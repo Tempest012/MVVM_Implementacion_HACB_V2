@@ -17,6 +17,19 @@
             HorizontalOptions="Center"
             Command="{Binding Sumarcommand}" TextTransform="None" BackgroundColor="White" FontAttributes="Bold" CornerRadius="5" TextColor="Black"/>
             <Label Text="{Binding R}" TextColor="White" HorizontalOptions="Center" FontAttributes="Bold" FontSize="35"/>
+            <Button Text="Ir a página 2" VerticalOptions="Center" HorizontalOptions="Center" TextTransform="None" BackgroundColor="White" FontAttributes="Bold" CornerRadius="5" TextColor="Black"/>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Label TextColor="White" FontAttributes="Bold" Text="Picker: " VerticalOptions="Center"/>
+                <Picker HorizontalOptions="FillAndExpand" Title="Selecciones una opción" SelectedItem="{Binding SeleccionarTipoUsuario}">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Administrador</x:String>
+                            <x:String>Empleado</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+            </StackLayout>
 
         </StackLayout>
     </Grid>
