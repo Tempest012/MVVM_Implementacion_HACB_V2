@@ -33,9 +33,9 @@ namespace MVVM_Implementacion_HACB_V2.VistaModelo
         }
         #endregion
         #region PROCESOS
-        public async Task ProcesoAsyncrono()
+        public async Task Volver()
         {
-
+            await Navigation.PopAsync();
         }
         public void ProcesoSimple()
         {
@@ -64,7 +64,7 @@ namespace MVVM_Implementacion_HACB_V2.VistaModelo
         }
         #endregion
         #region COMANDOS
-        public ICommand ProcesoAsyncommand => new Command(async () => await ProcesoAsyncrono());
+        public ICommand Volvercommand => new Command(async () => await Volver());
         //public ICommand ProcesoSimpcommand => new Command(ProcesoSimple);
         #endregion
     }

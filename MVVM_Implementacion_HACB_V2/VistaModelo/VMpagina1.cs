@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVVM_Implementacion_HACB_V2.Vista;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -53,9 +54,9 @@ namespace MVVM_Implementacion_HACB_V2.VistaModelo
         }
         #endregion
         #region PROCESOS
-        public async Task ProcesoSimple()
+        public async Task Navegarpagina2()
         {
-
+            await Navigation.PushAsync(new Page2());
         }
         public void Sumar()
         {
@@ -74,7 +75,7 @@ namespace MVVM_Implementacion_HACB_V2.VistaModelo
        
         #endregion
         #region COMANDOS
-        public ICommand ProcesoSimplecommand => new Command(async () => await ProcesoSimple());
+        public ICommand Navegarpagina2command => new Command(async () => await Navegarpagina2());
         public ICommand Sumarcommand => new Command(Sumar);
         #endregion
     }

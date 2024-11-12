@@ -12,7 +12,7 @@ namespace MVVM_Implementacion_HACB_V2
         {
             InitializeComponent();
 
-            MainPage = new Page1();
+            MainPage = new NavigationPage(new Page1());
         }
 
         protected override void OnStart()

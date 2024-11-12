@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using MVVM_Implementacion_HACB_V2.VistaModelo;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +15,7 @@ namespace MVVM_Implementacion_HACB_V2.Vista
         public Page2()
         {
             InitializeComponent();
+            BindingContext = new VMpage2(Navigation);
         }
     }
 }
